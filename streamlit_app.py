@@ -10,7 +10,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories.streamlit import StreamlitChatMessageHistory
-from langchain_chroma import Chroma
+
 
 # Chroma의 경우 Streamlit 배포 시, sqlite3 관련 의존성 문제 발생으로 인한 해결코드
 # (pysqlite3를 호출하고, 시스템상에서  sqlite3를 ㄹpysqlite3 모듈로 대체한다.)
